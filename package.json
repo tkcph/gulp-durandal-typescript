@@ -1,0 +1,38 @@
+{
+  "name": "gulpdur",
+  "version": "1.0.0",
+  "description": "My gulp durandal mix",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "bootstrap-sass": "^3.3.6",
+    "durandal": "^2.1.0",
+    "event-stream": "^3.3.2",
+    "express": "^4.13.4",
+    "font-awesome": "^4.6.1",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-durandal": "^1.1.7",
+    "gulp-html-replace": "^1.5.5",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-sass": "^2.3.1",
+    "gulp-sourcemaps": "^2.0.0-alpha",
+    "gulp-util": "^3.0.7",
+    "http-proxy-middleware": "^0.14.0",
+    "jquery": "^2.2.3",
+    "knockout": "^3.4.0",
+    "requirejs": "^2.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "gulp",
+    "durandal",
+    "typescript",
+    "requirejs",
+    "scss"
+  ],
+  "author": "Thomas Kokholm <thomas@kokholm.org>",
+  "license": "MIT"
+}
