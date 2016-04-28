@@ -18,6 +18,7 @@ requirejs.config({
     }
 });
 
+
 import * as system from 'durandal/system';
 import * as app from 'durandal/app';
 import * as viewLocator from 'durandal/viewLocator';

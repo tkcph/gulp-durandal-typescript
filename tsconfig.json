@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "module": "amd",
+    //"outDir": ".",
+    "sourceMap": true,
+    "target": "es5"
+  },
+  "filesGlob": [
+    "./*.ts",
+    "./**/*.ts",
+    "!./node_modules/**/*.ts",
+    "!./typings/**/*.ts"
+  ],
+  "exclude": [
+    "typings",
+    "node_modules"
+  ]
+}
