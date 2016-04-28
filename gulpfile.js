@@ -104,6 +104,10 @@ gulp.task('watch', function () {
     gulp.watch('css/**/*.scss', ['scss']);
 });
 
+gulp.task('server', function () {
+    run('node server.js').exec();  // run npm update
+});
+
 gulp.task('default', ['tsc', 'durandal', 'scss', 'fonts', 'html'], function(done) {
     done();
 });
