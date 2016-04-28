@@ -20,8 +20,19 @@
 *.tar
 *.zip
 
-node_modules
-typings
+# Project compiler files #
+#########################
+*.css
+*.css.map
+*.js
+*.js.map
+/.sass-cache
+
+# Exclude folders #
+###################
+/node_modules
+/typings
+/build
 
 # Logs and databases #
 ######################
@@ -38,3 +49,8 @@ typings
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# But don't exclude #
+#####################
+!gulpfile.js
+!server.js
