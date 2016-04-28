@@ -20,6 +20,9 @@
 *.tar
 *.zip
 
+node_modules
+typings
+
 # Logs and databases #
 ######################
 *.log
