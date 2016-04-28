@@ -7,6 +7,7 @@ var minifycss = require('gulp-minify-css');
 var concat = require('gulp-concat');
 var es = require('event-stream');
 var run = require('gulp-run');
+var typescript = require('gulp-tsc');
 
 gulp.task('durandal', function(){
     durandal({
@@ -88,10 +89,20 @@ gulp.task('npm', function () {
     run('npm update').exec();  // run npm update
 });
 
-gulp.task('tsc', function () {
-    run('tsc').exec();  // run tsc
+gulp.task('tsc', function(){
+    gulp.src(['app/**/*.ts'])
+        .pipe(typescript({
+            "module": "amd",
+            //"outDir": ".",
+            "sourceMap": true,
+            "target": "es5"
+        }));
 });
 
+gulp.task('watch', function () {
+    gulp.watch('app/**/*.ts', ['tsc']);
+    gulp.watch('css/**/*.scss', ['scss']);
+});
 
 gulp.task('default', ['tsc', 'durandal', 'scss', 'fonts', 'html'], function(done) {
     done();
